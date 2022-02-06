@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    app:layoutDescription="@xml/banner_info_scene">
+
+    <include
+        android:id="@+id/included_layout_text_deal"
+        layout="@layout/custom_text_view">
+    </include>
+
+    <!--<com.deliveryhero.banners.CustomTextView
+        android:id="@+id/expand_tv_deal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ellipsize="end"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/Lorum_Ipsum"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:animation_duration="750"
+        app:layout_constraintBottom_toBottomOf="@id/display_pic_deal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/display_pic_deal"
+        customTextView:animDuration="500"
+        customTextView:collapsedLines="3"
+        customTextView:textMode="line"
+        customTextView:backgroundColor="#FFFFFF"/>-->
+
+    <TextView
+        android:id="@+id/textview_deal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:text="Show More"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/display_pic_deal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_banner_deal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
