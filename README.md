@@ -10,5 +10,9 @@ Motion Layout is used for Animation.
 # How App Looks Like
 
 
-https://user-images.githubusercontent.com/47896958/152791961-2afeb24d-6a45-476e-8885-ec1af27b7f12.mov
+
+
+https://user-images.githubusercontent.com/47896958/152815461-1b13ca34-2259-41bc-b1ed-504384622c73.mov
+
+
 
