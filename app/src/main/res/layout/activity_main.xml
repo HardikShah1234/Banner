@@ -12,23 +12,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:text="@string/information"
         android:textSize="20sp"
-        android:text="Information Banner"
-        app:layout_constraintBottom_toTopOf="@id/text_layout">
+        app:layout_constraintTop_toTopOf="parent">
 
     </TextView>
 
-    <LinearLayout
+
+    <include
         android:id="@+id/text_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/info_text"
+        layout="@layout/banner_info">
+    </include>
+
+    <include
+        android:id="@+id/text_layout_deal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-        <include
-            layout="@layout/banner_info">
-        </include>
-    </LinearLayout>
+        layout="@layout/banner_deal">
+    </include>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
