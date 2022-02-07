@@ -27,6 +27,17 @@
         layout="@layout/banner_info">
     </include>
 
+    <TextView
+        android:id="@+id/deal_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/deal_banner"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_layout_deal">
+
+    </TextView>
+
     <include
         android:id="@+id/text_layout_deal"
         android:layout_width="match_parent"

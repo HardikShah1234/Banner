@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:customTextView="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#E5E5E5"
-    app:layoutDescription="@xml/banner_info_scene">
+    app:layoutDescription="@xml/banner_deal_scene">
 
     <include
         android:id="@+id/included_layout_text_deal"
@@ -24,14 +24,14 @@
         android:id="@+id/textview_deal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:paddingStart="16px"
         android:layout_marginTop="16px"
         android:layout_marginBottom="16px"
+        android:paddingStart="16px"
         android:paddingBottom="16px"
         android:text="@string/show_more"
         android:textColor="#000000"
-        app:layout_constraintTop_toBottomOf="@+id/included_layout_text_deal"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/included_layout_text_deal" />
 
     <ImageView
         android:id="@+id/display_pic_deal"
@@ -43,4 +43,4 @@
         app:layout_constraintRight_toRightOf="parent"
         app:srcCompat="@drawable/ic_banner_deal" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>

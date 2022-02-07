@@ -14,30 +14,27 @@
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
-
         <Constraint
             android:layout_width="0dp"
-            android:layout_height="0dp"
-            motion:layout_constraintBottom_toBottomOf="@id/display_pic"
-            android:layout_marginBottom="16dp"
+            android:layout_height="1dp"
             motion:layout_constraintLeft_toLeftOf="parent"
-            motion:layout_constraintRight_toLeftOf="@+id/display_pic"
-            android:id="@+id/expand_tv"
-            motion:layout_constraintTop_toTopOf="parent" />
-
+            motion:layout_constraintRight_toLeftOf="@+id/display_pic_deal"
+            android:id="@+id/included_layout_text_deal"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/textview_deal" />
         <Constraint
             android:layout_width="79dp"
             android:layout_height="2dp"
-            android:id="@+id/textview"
+            android:id="@+id/textview_deal"
             motion:layout_editor_absoluteY="31dp"
             motion:layout_editor_absoluteX="-1dp" />
-
         <Constraint
             android:layout_height="0dp"
             android:layout_width="0dp"
-            android:id="@+id/display_pic"
+            android:id="@+id/display_pic_deal"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintRight_toRightOf="parent" />
+
 
     </ConstraintSet>
 

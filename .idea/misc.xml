@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.12447916666666667" />
+        <entry key="banners/src/main/res/layout/banner_deal.xml" value="0.625" />
         <entry key="banners/src/main/res/layout/banner_info.xml" value="0.4444444444444444" />
       </map>
     </option>
