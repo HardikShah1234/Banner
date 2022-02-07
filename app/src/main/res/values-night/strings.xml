@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="deal_banner">Deal Banner</string>
+    <string name="banners">Banners</string>
+    <string name="description_banner">This is the preview of library banners. Please take a look and use it in the app</string>
 </resources>

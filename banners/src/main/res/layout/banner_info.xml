@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#000000"
+    android:background="@color/black"
     app:layoutDescription="@xml/banner_info_scene">
 
     <include
@@ -13,7 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16px"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/display_pic"></include>
+        app:layout_constraintRight_toLeftOf="@+id/display_pic">
+
+    </include>
 
     <TextView
         android:id="@+id/textview"
@@ -24,7 +26,7 @@
         android:paddingStart="16px"
         android:paddingBottom="16px"
         android:text="@string/show_more"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/expand_tv" />
 

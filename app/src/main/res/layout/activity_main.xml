@@ -8,13 +8,41 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/banners_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/banners"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/description_banners">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/description_banners"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description_banner"
+        android:paddingStart="16px"
+        app:layout_constraintTop_toTopOf="@id/banners_text"
+        app:layout_constraintBottom_toBottomOf="@id/info_text">
+
+    </TextView>
+
+
+    <TextView
         android:id="@+id/info_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="16dp"
         android:text="@string/information"
         android:textSize="20sp"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="@+id/description_banners"
+        app:layout_constraintBottom_toTopOf="@id/text_layout">
 
     </TextView>
 
@@ -24,13 +52,18 @@
         layout="@layout/banner_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/info_text"></include>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/deal_title">
+
+    </include>
 
     <TextView
         android:id="@+id/deal_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:text="@string/deal_banner"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/text_layout_deal">
@@ -43,7 +76,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"></include>
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </include>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
