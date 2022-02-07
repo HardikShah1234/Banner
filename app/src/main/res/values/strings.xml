@@ -3,4 +3,6 @@
     <string name="textviewimage">Press [img src=ic_banner_info/] to accept</string>
     <string name="information" tools:ignore="ExtraTranslation"><b>Information Banner</b></string>
     <string name="deal_banner"><b>Deal Banner</b></string>
+    <string name="banners" tools:ignore="ExtraTranslation"><b>Banners</b></string>
+    <string name="description_banner">This is the preview of library banners. Please take a look and use it in the app</string>
 </resources>
