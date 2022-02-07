@@ -5,7 +5,6 @@ import android.graphics.Typeface
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.style.StyleSpan
-import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
