@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customTextView="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:customTextView="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <com.deliveryhero.banners.CustomTextView
         android:id="@+id/custom_text_view_deal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:ellipsize="end"
         android:paddingStart="16px"
         android:paddingTop="16px"
         android:paddingBottom="8px"
-        android:ellipsize="end"
         customTextView:animDuration="500"
         customTextView:collapsedLines="3"
         customTextView:textMode="line">

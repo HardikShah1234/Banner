@@ -22,7 +22,8 @@ import kotlinx.android.synthetic.main.banner_info.view.*
 class CustomTextView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet,
-    defStyleAttr: Int = R.attr.customTextView) : AppCompatTextView(context, attrs, defStyleAttr),
+    defStyleAttr: Int = R.attr.customTextView
+) : AppCompatTextView(context, attrs, defStyleAttr),
     View.OnClickListener {
 
     private var originalText: CharSequence? = ""
@@ -99,12 +100,16 @@ class CustomTextView @JvmOverloads constructor(
     init {
         context.obtainStyledAttributes(attrs, R.styleable.CustomTextView).apply {
             try {
-                collapsedLines = getInt(R.styleable.CustomTextView_collapsedLines, COLLAPSED_MAX_LINES)
-                animationDuration = getInt(R.styleable.CustomTextView_animDuration, DEFAULT_ANIM_DURATION)
-                foregroundColor = getColor(R.styleable.CustomTextView_foregroundColor, Color.TRANSPARENT)
+                collapsedLines =
+                    getInt(R.styleable.CustomTextView_collapsedLines, COLLAPSED_MAX_LINES)
+                animationDuration =
+                    getInt(R.styleable.CustomTextView_animDuration, DEFAULT_ANIM_DURATION)
+                foregroundColor =
+                    getColor(R.styleable.CustomTextView_foregroundColor, Color.TRANSPARENT)
                 isUnderlined = getBoolean(R.styleable.CustomTextView_isUnderlined, false)
                 isExpanded = getBoolean(R.styleable.CustomTextView_isExpanded, false)
-                ellipsizeTextColor = getColor(R.styleable.CustomTextView_ellipsizeTextColor, Color.BLUE)
+                ellipsizeTextColor =
+                    getColor(R.styleable.CustomTextView_ellipsizeTextColor, Color.BLUE)
             } finally {
                 this.recycle()
             }
@@ -119,17 +124,22 @@ class CustomTextView @JvmOverloads constructor(
         if (initialText?.isBlank()!!)
             return
 
-        text = if (isExpanded || visibleText.isAllTextVisible() || collapsedLines!! == COLLAPSED_MAX_LINES) {
-            SpannableStringBuilder(
-                initialText.toString())
-        } else {
-            SpannableStringBuilder(
-                visibleText.substring(0,
-                    visibleText.length))
-        }
+        text =
+            if (isExpanded || visibleText.isAllTextVisible() || collapsedLines!! == COLLAPSED_MAX_LINES) {
+                SpannableStringBuilder(
+                    initialText.toString()
+                )
+            } else {
+                SpannableStringBuilder(
+                    visibleText.substring(
+                        0,
+                        visibleText.length
+                    )
+                )
+            }
     }
 
-    private fun visibilityText():String = initialText!!
+    private fun visibilityText(): String = initialText!!
 
     private fun setForeground(isExpanded: Boolean) {
         foreground = GradientDrawable(BOTTOM_TOP, intArrayOf(foregroundColor!!, Color.TRANSPARENT))
